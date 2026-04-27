@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <title>قائمة الوجبات</title>
+    <link rel="stylesheet" href="Style.css">
+    <script src="myfunctions.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>قائمة الوجبات</h1>
+            <p>أكثر من مجموعتنا المميزة من الأطباق السورية الأصيلة</p>
+        </header>
+
+        <table>
+            <tr>
+                <th>اختيار</th>
+                <th>الكود</th>
+                <th>اسم الوجبة</th>
+                <th>السعر</th>
+                <th>التفاصيل</th>
+            </tr>
+
+            <!-- وجبة 1 -->
+            <tr>
+                <td><input type="checkbox" class="meal-check" data-id="meal1" data-name="كبة حلبية" data-price="850">
+                </td>
+                <td>M001</td>
+                <td>كبة حلبية</td>
+                <td>850 ل.س</td>
+                <td><button onclick="toggleDetails('meal1')">عرض التفاصيل</button></td>
+            </tr>
+            <tr>
+                <td colspan="5">
+                    <div class="details" id="meal1">
+                        <img src="assets/kibbeh.jpg" alt="كبة حلبية">
+                        <h3>كبة حلبية</h3>
+                        <p>كبة حلبية محشوة باللحم والبصل والبهارات، تقدم مع اللبن والسلطة.</p>
+                        <p><strong>التصنيف:</strong> مأكولات شرقية</p>
+                        <p><strong>السعر:</strong> 850 ل.س</p>
+                    </div>
+                </td>
+            </tr>
+
+            <!-- وجبة 2 -->
+            <tr>
+                <td><input type="checkbox" class="meal-check" data-id="meal2" data-name="شاورما دجاج" data-price="650">
+                </td>
+                <td>M002</td>
+                <td>شاورما دجاج</td>
+                <td>650 ل.س</td>
+                <td><button onclick="toggleDetails('meal2')">عرض التفاصيل</button></td>
+            </tr>
+            <tr>
+                <td colspan="5">
+                    <div class="details" id="meal2">
+                        <img src="assets/shawarma.jpg" alt="شاورما دجاج">
+                        <h3>شاورما دجاج</h3>
+                        <p>شاورما دجاج متبلة ومشوية على الفحم، تقدم مع الثوم والبطاطا.</p>
+                        <p><strong>التصنيف:</strong> مأكولات سريعة</p>
+                        <p><strong>السعر:</strong> 650 ل.س</p>
+                    </div>
+                </td>
+            </tr>
+
+            <!-- وجبة 3 -->
+            <tr>
+                <td><input type="checkbox" class="meal-check" data-id="meal3" data-name="فتة مكدوس" data-price="750">
+                </td>
+                <td>M003</td>
+                <td>فتة مكدوس</td>
+                <td>750 ل.س</td>
+                <td><button onclick="toggleDetails('meal3')">عرض التفاصيل</button></td>
+            </tr>
+            <tr>
+                <td colspan="5">
+                    <div class="details" id="meal3">
+                        <img src="assets/makdous.jpg" alt="فتة مكدوس">
+                        <h3>فتة مكدوس</h3>
+                        <p>فتة مكدوس سورية تقليدية مع اللبن والخبز المحمص والمكدوس.</p>
+                        <p><strong>التصنيف:</strong> مأكولات شامية</p>
+                        <p><strong>السعر:</strong> 750 ل.س</p>
+                    </div>
+                </td>
+            </tr>
+
+            <!-- وجبة 4 -->
+            <tr>
+                <td><input type="checkbox" class="meal-check" data-id="meal4" data-name="مشاوي مشكل" data-price="950">
+                </td>
+                <td>M004</td>
+                <td>مشاوي مشكل</td>
+                <td>950 ل.س</td>
+                <td><button onclick="toggleDetails('meal4')">عرض التفاصيل</button></td>
+            </tr>
+            <tr>
+                <td colspan="5">
+                    <div class="details" id="meal4">
+                        <img src="assets/mashawi.jpg" alt="مشاوي مشكل">
+                        <h3>مشاوي مشكل</h3>
+                        <p>طبق مشاوي مشكل يتضمن كباب، شيش طاووق، أوصال لحم، يقدم مع الخبز والسلطات.</p>
+                        <p><strong>المكونات:</strong> لحم، دجاج، بهارات، بصل، طماطم</p>
+                        <p><strong>السعر:</strong> 950 ل.س</p>
+                    </div>
+                </td>
+            </tr>
+
+            <!-- وجبة 5 -->
+            <tr>
+                <td><input type="checkbox" class="meal-check" data-id="meal5" data-name="فتوش" data-price="550"></td>
+                <td>M005</td>
+                <td>فتوش</td>
+                <td>550 ل.س</td>
+                <td><button onclick="toggleDetails('meal5')">عرض التفاصيل</button></td>
+            </tr>
+            <tr>
+                <td colspan="5">
+                    <div class="details" id="meal5">
+                        <img src="assets/fattoush.jpg" alt="فتوش">
+                        <h3>فتوش</h3>
+                        <p>سلطة فتوش شامية مكونة من الخضار الطازجة والخبز المحمص مع دبس الرمان.</p>
+                        <p><strong>المكونات:</strong> خس، بندورة، خيار، بصل، خبز محمص، دبس رمان</p>
+                        <p><strong>السعر:</strong> 550 ل.س</p>
+                    </div>
+                </td>
+            </tr>
+        </table>
+        <button class="order-btn" id="continue-btn" onclick="showOrderForm()">متابعة</button>
+
+        <!-- ======================== fadi ==================== -->
+        <div id="order-form-section">
+            <h2>بيانات مقدم الطلب</h2>
+
+            <div class="form-group">
+                <label class="form-label" for="full-name">الاسم الكامل (أحرف عربية فقط)</label>
+                <input type="text" id="full-name" class="form-input form-text" placeholder="مثال: محمد أحمد السيد">
+                <div class="error-msg" id="err-name">يُقبل الاسم بأحرف عربية فقط.</div>
+            </div>
+
+            <div class="form-group">
+                <label class="form-label" for="national-id">الرقم الوطني (11 خانة - أرقام فقط) *</label>
+                <input type="text" id="national-id" class="form-input form-text" placeholder="مثال: 01234567890"
+                    maxlength="11">
+                <div class="error-msg" id="err-id">الرقم الوطني يجب أن يتكون من 11 رقماً، وتبدأ بالمحافظة (01 إلى 14).
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="form-label" for="birth-date">تاريخ الولادة (dd-mm-yyyy)</label>
+                <input type="text" id="birth-date" class="form-input form-text" placeholder="مثال: 15-06-1995"
+                    maxlength="10">
+                <div class="error-msg" id="err-date">صيغة التاريخ غير صحيحة. يجب أن تكون dd-mm-yyyy.</div>
+            </div>
+
+            <div class="form-group">
+                <label class="form-label" for="mobile">رقم الموبايل (Syriatel أو MTN)</label>
+                <input type="text" id="mobile" class="form-input form-text" placeholder="مثال: 0996949574"
+                    maxlength="10">
+                <div class="error-msg" id="err-mobile">رقم الموبايل غير صحيح. يجب أن يبدأ بـ 09 ويكون 10 أرقام.</div>
+            </div>
+
+            <div class="form-group">
+                <label class="form-label" for="email">البريد الإلكتروني</label>
+                <input type="text" id="email" class="form-input form-text" placeholder="مثال: name@example.com">
+                <div class="error-msg" id="err-email">صيغة البريد الإلكتروني غير صحيحة.</div>
+            </div>
+
+            <button id="submit-btn" onclick="submitOrder()">إرسال</button>
+        </div>
+    </div>
+
+    <div id="summary-overlay">
+        <div id="summary-box">
+            <h2>ملخص الطلب</h2>
+            <div id="summary-content"></div>
+            <button id="close-summary" onclick="closeSummary()">إغلاق</button>
+        </div>
+    </div>
+    <!-- ======================== fadi ==================== -->
+</body>
+
+</html>
