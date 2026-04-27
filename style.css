@@ -296,6 +296,10 @@ button {
 
 
 /* ========================= fadi =============================== */
+a {
+   text-decoration: none;
+}
+
 .form-input {
    border: 1px solid #ccc;
    border-radius: 6px;
