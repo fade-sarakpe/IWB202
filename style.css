@@ -432,18 +432,6 @@ a {
 .about-content div{
    width: 40vw;
 }
-
-@media screen and (max-width: 768px) {
-   .about-content {
-      flex-direction: column;
-      text-align: center;
-   }
-
-   .about-content img {
-      width: 400px;
-      height: 400px;
-   }
-}
 /* ========================= about =============================== */
 /* ========================= footer =============================== */
 .footer {
