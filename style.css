@@ -14,18 +14,17 @@ body {
   padding: 0;
   direction: rtl;
   text-align: right;
-  padding-top: 80px;
 }
 
 /* ========================= navbar =============================== */
 .navbar {
-  position: fixed;
-  top: 0;
   width: 100%;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   z-index: 1000;
   height: 80px;
   display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
 }
 
 .nav-container {
@@ -426,7 +425,7 @@ a {
 .about-content img {
    height: 50vh;
    width: 40vw;
-   margin: 45px 0;
+   margin: 15px 0;
    border-radius: 50px;
 }
 
