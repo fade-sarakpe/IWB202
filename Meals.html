@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <title>قائمة الوجبات</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="myfunctions.js" defer></script>
 </head>
 
@@ -41,7 +42,7 @@
                 <td>M001</td>
                 <td>كبة حلبية</td>
                 <td>850 ل.س</td>
-                <td><button onclick="toggleDetails('meal1')">عرض التفاصيل</button></td>
+                <td><button data-toggle-details="meal1">عرض التفاصيل</button></td>
             </tr>
             <tr>
                 <td colspan="5">
@@ -62,7 +63,7 @@
                 <td>M002</td>
                 <td>شاورما دجاج</td>
                 <td>650 ل.س</td>
-                <td><button onclick="toggleDetails('meal2')">عرض التفاصيل</button></td>
+                <td><button data-toggle-details="meal2">عرض التفاصيل</button></td>
             </tr>
             <tr>
                 <td colspan="5">
@@ -83,7 +84,7 @@
                 <td>M003</td>
                 <td>فتة مكدوس</td>
                 <td>750 ل.س</td>
-                <td><button onclick="toggleDetails('meal3')">عرض التفاصيل</button></td>
+                <td><button data-toggle-details="meal3">عرض التفاصيل</button></td>
             </tr>
             <tr>
                 <td colspan="5">
@@ -104,7 +105,7 @@
                 <td>M004</td>
                 <td>مشاوي مشكل</td>
                 <td>950 ل.س</td>
-                <td><button onclick="toggleDetails('meal4')">عرض التفاصيل</button></td>
+                <td><button data-toggle-details="meal4">عرض التفاصيل</button></td>
             </tr>
             <tr>
                 <td colspan="5">
@@ -124,7 +125,7 @@
                 <td>M005</td>
                 <td>فتوش</td>
                 <td>550 ل.س</td>
-                <td><button onclick="toggleDetails('meal5')">عرض التفاصيل</button></td>
+                <td><button data-toggle-details="meal5">عرض التفاصيل</button></td>
             </tr>
             <tr>
                 <td colspan="5">

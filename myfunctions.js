@@ -1,14 +1,11 @@
 
-function toggleDetails(id) {
-    var box = document.getElementById(id);
-    if (box.style.display === "none" || box.style.display === "") {
-        box.style.display = "block";
-    } else {
-        box.style.display = "none";
-    }
-}
+$(document).ready(function() {
+    $('button[data-toggle-details]').click(function() {
+        var id = $(this).data('toggle-details');
+        $('#' + id).slideToggle();
+    });
+});
 
-// <!-- ======================== fadi ==================== -->
 function showOrderForm() {
     var checkboxes = document.querySelectorAll(".meal-check");
     var anyChecked = false;
@@ -192,4 +189,3 @@ function submitOrder() {
 function closeSummary() {
     document.getElementById("summary-overlay").classList.remove("active");
 }
-// <!-- ======================== fadi ==================== -->
